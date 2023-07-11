@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styleHome.css.css">
+    <link rel="icon" href="../assets/interface-file-clipboard.png">
+    <title>Lista de Compras</title>
+</head>
+
+<body>
+    <a href="#" id="logout" class="logout"><ion-icon name="log-out"></ion-icon></a>
+    <div class="visor">
+        <div class="inputs">
+            <h2>Total:</h2>
+            <h2 id="h2" class="total">000</h2>
+            <input type="text" class="inpu" id="prod" placeholder="Produto">
+            <input type="number" class="inpu" id="price" placeholder="Preço" min="0">
+            <button class="btn" id="add">+</button>
+        </div>
+    </div>
+    <div class="conter">
+        <div class="data" id="data">Dados Atualizados</div>
+        <ul class="ul" id="ul">
+        </ul>
+        <button id="remov" class="btn2">X</button>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../script/logic.js"></script>
+    <script src="../script/data.js" type="module"></script>
+    <script src="../script/authLogout.js" type="module"></script>
+</body>
+
+</html>

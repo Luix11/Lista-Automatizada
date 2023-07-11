@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../assets/background.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logout {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-right: 3%;
+    margin-top: 2%;
+    padding: 8px;
+    cursor: pointer;
+    border-style:groove;
+    background:transparent;
+    border-radius: 30%;
+    color: aliceblue;
+}
+
+.visor {
+    color: aliceblue;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 99;
+}
+
+.total {
+    margin-left: 2%;
+    margin-right: 15px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.inpu {
+    margin-right: 2%;
+    border-radius: 5px;
+    width: 50%;
+    height: 25px;
+    border-style: solid;
+    border-color: aliceblue;
+}
+
+.btn {
+    margin-left: 5%;
+    width: 35px;
+    height: 35px;
+    background-color: #162938;
+    border-radius: 30%;
+    border-color: aliceblue;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+
+.conter {
+    display: flex;
+    flex-direction: column;
+    width: 60vh;
+    height: 80%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    transition: height .2s ease;
+    transition: transform .5s ease, heigth .2s ease;
+}
+
+.ul {
+    list-style: inside;
+    list-style-type: decimal;
+}
+
+li {
+    background: #162938;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 15px;
+    font-size: large;
+    border: 5px;
+    border-style: outset;
+    border-color: aliceblue;
+    animation-name: fade;
+    animation-duration: 600ms;
+}
+
+.btn2 {
+    display: none;
+    width: 40px;
+    height: 30px;
+    background-color: #162938;
+    border-radius: 20%;
+    border-color: aliceblue;
+    animation-name: fade;
+    animation-duration: 500ms;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.data {
+    display: none;
+    font-size: large;
+    color: white;
+
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width: 530px) {
+
+    body{
+        font-size: 1.2rem;
+    }
+
+    .logout{
+        margin-right: 5%;
+    }
+
+    .visor{
+        box-sizing: border-box;
+        justify-content: center;
+        width: 50vh;
+    }
+
+    .inpu{
+        width: 100px;
+        
+    }
+
+    .conter {
+        width: 50vh;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .inpu{
+        width: 50px;
+        
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    body{
+        font-size: 1rem;
+    }
+
+    .visor{
+        width: 40vh;
+        margin-right: 5%;
+    }
+
+    .inpu{
+        width: 50px;
+        
+    }
+    .conter {
+        width: 40vh;
+    }
+}
+
+
