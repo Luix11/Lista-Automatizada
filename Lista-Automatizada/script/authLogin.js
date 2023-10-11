@@ -41,7 +41,7 @@ function log() {
             const errorCode = error.code;
             const errorMessage = error.message;
 
-            alert("Email ou senha incorreto" + errorMessage);
+            alert("Email ou senha incorreto");
         });
 
 };
